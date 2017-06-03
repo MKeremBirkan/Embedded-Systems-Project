@@ -1,0 +1,8 @@
+#!/bin/bash
+cd /sys/class/gpio/gpio44
+echo out > direction
+for i in {1..20}
+do
+	echo 1 > value
+	echo 0 > value
+done
